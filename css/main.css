@@ -84,8 +84,8 @@ body {
 }
 
 @media (max-width: 539px) {
-    .line {
-        display: none;
+    .hero-text {
+        font-size: 1rem;
     }
 }
 
