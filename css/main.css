@@ -1,0 +1,108 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+#header {
+    background-color: #343434;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+}
+.head-text {
+    font-family: 'Consolas', sans-serif;
+    padding: 20px;
+}
+.ball {
+    background-color: #343434;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.ball:hover {
+    background-color: #000;
+}
+.hero-text {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 5ch;
+    font-weight: bolder;
+    letter-spacing: -0.1rem;
+    text-align: center;
+}
+#myWorld {
+    color: #F82C68;
+}
+#equal {
+    color: rgb(38, 249, 216);
+}
+#code {
+    color: #036592;
+}
+#colon {
+    color: rgb(38, 249, 216);
+}
+#cursor {
+    color: #036592;
+    animation: cursor-blink 1s infinite;
+}
+.line {
+    background-color: #7B8788;
+    height: 1px;
+    margin: 15px;
+}
+.header-lines {
+    position: relative;
+    height: 8px;
+    margin-top: -5px;;
+}
+.bg-pink {
+    background-color: #F82C68;
+}
+.bg-sky {
+    background-color: rgb(38, 249, 216);
+}
+.bg-blue {
+    background-color: #036592;
+}
+.bg-green {
+    background-color: #27ae60;
+}
+.bg-orange {
+    background-color: #F89101;
+}
+.bg-red {
+    background-color: #ff3133;
+}
+.bg-yellow {
+    background-color: #EEC213;
+}
+
+@media (max-width: 539px) {
+    .line {
+        display: none;
+    }
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
