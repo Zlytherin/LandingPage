@@ -12,8 +12,9 @@ body {
     top: 0px;
 }
 .head-text {
-    font-family: 'Consolas', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     padding: 20px;
+    font-weight: bold;
 }
 .ball {
     background-color: #343434;
@@ -85,7 +86,7 @@ body {
 
 @media (max-width: 539px) {
     .hero-text {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
