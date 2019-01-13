@@ -11,11 +11,102 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Mono|Roboto:400|Montserrat:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
  
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+ 
+    <div id="wrapper" class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col line"></div>
+            <div class="col col-auto text-center hero-text">
+                <span id="myWorld"></span><span id="equal"></span><span id="code"></span><span id="colon"></span><span id="cursor">|</span>
+            </div>
+            <div class="col line"></div>
+        </div>
+        <div class="row section">
+            <div class="col-lg-6 col-12 align-self-center about-one">
+                <h4 class="about-sub">Hey again!</h4>
+                <p class="h1 about-head">
+                        I'm Harshit Seksaria. A Developer, Designer, Programmer and Potterhead
+                    </p>
+                <p class="about-intro">How's its going?</p>
+            </div>
+            <div class="col-lg-6 col-12 about-two">
+                <h3 class="section-head">Introduction</h3>
+                <p class="lead intro-text">Hey there! My name is Harshit (<em>Better known as Zlytherin</em>). I mainly write <mark>code</mark> for Web and Android applications but I'm a student right now.</p>
+                <blockquote class="blockquote">By day, I'm a Student and by night, I'm a Programmer.</blockquote>
+                <p class="lead intro-text">Well, I'm playing with Machines since 2012, became a Programmer in 2014 and <mark>C</mark> as my first programming language. I spend a lot of time with <mark>C</mark>, even I'd a <mark>Messenger</mark> with that.</p>
+                <blockquote class="blockquote">My Favorite Language is <mark>Kotlin</mark>, <b>That's Amazing.</b></blockquote>
+            </div>
+        </div>
+        <div class="row section d-lg-flex flex-row-reverse">
+            <div class="col-lg-6 skill-two align-self-center">
+                <h4 class="skill-sub">Learning never ends!</h4>
+                <p class="h1 about-head">Here's what I've learned so far</p>
+                <p class="about-intro">Most of my time goes in learning new things.</p>
+            </div>
+            <div class="col-lg-6 skill-one">
+                <h3 class="section-head">Skills</h3>
+                <ul class="list-group">
+                    <li id="prog" class="list-group-item d-flex justify-content-between align-items-center">
+                        Programming Languages
+                        <span class="badge badge-primary badge-pill">6</span>
+                    </li>
+                    <li id="prog-list" class="list-group-item ">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">C</li>
+                            <li class="list-group-item">C++</li>
+                            <li class="list-group-item">Java</li>
+                            <li class="list-group-item">JavaScript</li>
+                            <li class="list-group-item">Python</li>
+                            <li class="list-group-item">Kotlin</li>
+                        </ul>
+                    </li>
+                    <li id="mark" class="list-group-item d-flex justify-content-between align-items-center">
+                        Markup Languages
+                        <span class="badge badge-primary badge-pill">3</span>
+                    </li>
+                    <li id="mark-list" class="list-group-item">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">HTML</li>
+                                <li class="list-group-item">CSS</li>
+                                <li class="list-group-item">XML</li>
+                            </ul>
+                        </li>
+                    <li id="lib" class="list-group-item d-flex justify-content-between align-items-center">
+                        Libraries / Databases
+                        <span class="badge badge-primary badge-pill">5</span>
+                    </li>
+                    <li id="lib-list" class="list-group-item">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Django</li>
+                                <li class="list-group-item">Numpy</li>
+                                <li class="list-group-item">Matplotlib</li>
+                                <li class="list-group-item">Bootstrap</li>
+                                <li class="list-group-item">SQLite Database</li>
+                            </ul>
+                        </li>
+                    <li id="fire" class="list-group-item d-flex justify-content-between align-items-center">
+                        Firebase
+                        <span class="badge badge-primary badge-pill">5</span>
+                    </li>
+                    <li id="fire-list" class="list-group-item">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Authentication</li>
+                                <li class="list-group-item">Real-time Database</li>
+                                <li class="list-group-item">Firestore</li>
+                                <li class="list-group-item">Storage</li>
+                                <li class="list-group-item">Crashlytics</li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <div id="header" class="container-fluid">
         <div class="row header-lines">
@@ -35,18 +126,7 @@
             <div class="col-3 col-lg ball">Something</div>
         </div>
     </div>
- 
-    <div id="wrapper" class="container-fluid">
-        <div class="row align-items-center justify-content-center">
-            <div class="col line"></div>
-            <div class="col col-auto hero-text">
-                <span id="myWorld"></span><span id="equal"></span><span id="code"></span><span id="colon"></span><span id="cursor">|</span>
-            </div>
-            <div class="col line"></div>
-        </div>
-    </div>
 </body>
-    
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
