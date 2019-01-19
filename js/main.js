@@ -12,6 +12,41 @@ const fireList = $('#fire-list')
 const margin = `${header.outerHeight() + 10}px`;
 wrapper.css('marginTop', margin);
 
+// Smooth Scrolling
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop':  ($target.offset().top - header.outerHeight())
+        }, 900, 'swing');
+    });
+});
+
+window.onscroll = () => scrollFunction();
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    showArrow();
+  } else {
+    hideArrow();
+  }
+}
+
+const showArrow = () => {
+    $('#arrow').css('opacity', '1')
+}
+const hideArrow = () => {
+    $('#arrow').css('opacity', '0')
+}
+
+function topFunction() {
+  $('html, body').animate({
+      'scrollTop': 0
+  }, 500, 'swing');
+}
+
 const showHeroText = (element, content, delay) => {
     if (content === "") 
         return;
