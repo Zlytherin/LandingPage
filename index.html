@@ -30,13 +30,12 @@
         </div>
         <div class="row align-items-center">
             <div class="col-12 col-lg-6 head-text lead">H:\Users\HarshitSeksaria$></div>
-            <div class="col-3 col-lg ball">About me</div>
-            <div class="col-3 col-lg ball">Skills</div>
-            <div class="col-3 col-lg ball">Social</div>
-            <div class="col-3 col-lg ball">Recent Projects</div>
+            <a href="#about" class="col-3 col-lg ball">About me</a>
+            <a href="#skill" class="col-3 col-lg ball">Skills</a>
+            <a href="#social" class="col-3 col-lg ball">Social</a>
+            <a href="#project" class="col-3 col-lg ball">Recent Projects</a>
         </div>
     </div>
-
 
     <div id="wrapper" class="container-fluid">
 
@@ -50,13 +49,15 @@
         </div>
 
         <!-- Introduction section -->
-        <div class="row section">
+        <div id="about" class="row section">
             <div class="col-lg-6 col-12 align-self-center about-one">
-                <h4 class="about-sub">Hey again!</h4>
-                <p class="h1 about-head">
-                        I'm Harshit Seksaria. A Developer, Designer, Programmer and Potterhead
+                <div class="section-wrapper">
+                    <h4 class="about-sub">Hey again!</h4>
+                    <p class="h1 about-head">
+                         I'm Harshit Seksaria. A Developer, Designer, Programmer and Potterhead
                     </p>
-                <p class="about-intro">How's its going?</p>
+                    <p class="about-intro">How's its going?</p>
+                </div>
             </div>
             <div class="col-lg-6 col-12 section-sub align-self-center">
                 <h3 class="section-head">Introduction</h3>
@@ -68,15 +69,17 @@
         </div>
 
         <!-- Skills section -->
-        <div class="row section d-lg-flex flex-row-reverse">
+        <div id="skill" class="row section d-lg-flex flex-row-reverse">
             <div class="col-lg-6 skill-two align-self-center">
-                <h4 class="skill-sub">Learning never exhausts the mind!</h4>
-                <p class="h1 about-head">Here's what I've learned so far, I'm still learning</p>
-                <p class="about-intro">Change is the end result of all true learning!</p>
+                <div class="section-wrapper">
+                    <h4 class="skill-sub">Learning never exhausts the mind!</h4>
+                    <p class="h1 skill-head">Here's what I've learned so far, I'm still learning</p>
+                    <p class="skill-intro">Change is the end result of all true learning!</p>
+                </div>
             </div>
             <div class="col-lg-6 section-sub align-self-center">
                 <h3 class="section-head">Skills</h3>
-                <ul class="list-group" style="margin-top: 30px;">
+                <ul class="list-group main-list" style="margin-top: 30px;">
                     <li id="prog" class="list-group-item list-hover-pointer d-flex justify-content-between align-items-center">
                         Programming Languages
                         <span class="badge badge-primary badge-pill">6</span>
@@ -96,50 +99,54 @@
                         <span class="badge badge-primary badge-pill">3</span>
                     </li>
                     <li id="mark-list" class="list-group-item">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">HTML</li>
-                                <li class="list-group-item">CSS</li>
-                                <li class="list-group-item">XML</li>
-                            </ul>
-                        </li>
-                    <li id="lib" class="list-group-item list-hover-pointer d-flex justify-content-between align-items-center">
-                        Libraries / Databases
-                        <span class="badge badge-primary badge-pill">5</span>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">HTML</li>
+                            <li class="list-group-item">CSS</li>
+                            <li class="list-group-item">XML</li>
+                        </ul>
                     </li>
-                    <li id="lib-list" class="list-group-item">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Django</li>
-                                <li class="list-group-item">Numpy</li>
-                                <li class="list-group-item">Matplotlib</li>
-                                <li class="list-group-item">Bootstrap</li>
-                                <li class="list-group-item">SQLite Database</li>
-                            </ul>
-                        </li>
                     <li id="fire" class="list-group-item list-hover-pointer d-flex justify-content-between align-items-center">
                         Firebase
                         <span class="badge badge-primary badge-pill">5</span>
                     </li>
                     <li id="fire-list" class="list-group-item">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Authentication</li>
-                                <li class="list-group-item">Real-time Database</li>
-                                <li class="list-group-item">Firestore</li>
-                                <li class="list-group-item">Storage</li>
-                                <li class="list-group-item">Crashlytics</li>
-                            </ul>
-                        </li>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Authentication</li>
+                            <li class="list-group-item">Real-time Database</li>
+                            <li class="list-group-item">Firestore</li>
+                            <li class="list-group-item">Storage</li>
+                            <li class="list-group-item">Crashlytics</li>
+                        </ul>
+                    </li>
+                    <li id="lib" class="list-group-item list-hover-pointer d-flex justify-content-between align-items-center">
+                        Others
+                        <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                    <li id="lib-list" class="list-group-item">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Android Development</li>
+                            <li class="list-group-item">Web Development</li>
+                            <li class="list-group-item">Django</li>
+                            <li class="list-group-item">Numpy</li>
+                            <li class="list-group-item">Matplotlib</li>
+                            <li class="list-group-item">Bootstrap</li>
+                            <li class="list-group-item">SQLite Database</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
 
         <!-- Social Section -->
-        <div class="row section">
+        <div id="social" class="row section">
             <div class="col-lg-6 col-12 align-self-center social-one">
-                <h4 class="social-sub">Wanna get in touch with me?</h4>
-                <p class="h1 about-head">
+                <div class="section-wrapper">
+                    <h4 class="social-sub">Wanna get in touch with me?</h4>
+                    <p class="h1 social-head">
                         Here's how you can do that. Say hello, or keep scrolling.
-                </p>
-                <p class="about-intro">harshitseksaria9@gmail.com</p>
+                    </p>
+                    <p class="social-intro">harshitseksaria9@gmail.com</p>
+                </div>
             </div>
             <div class="col-lg-6 col-12 section-sub align-self-center">
                 <h3 class="section-head">Social</h3>
@@ -153,11 +160,13 @@
         </div>
 
         <!-- Projects section -->
-        <div class="row section d-lg-flex flex-row-reverse">
+        <div id="project" class="row section d-lg-flex flex-row-reverse">
                 <div class="col-lg-6 project-two align-self-center">
-                    <h4 class="project-sub">Time to implement my learnings.</h4>
-                    <p class="h1 about-head">Without any Projects, No Programmer is of any avail. Here are my <em>recent</em> projects.</p>
-                    <p class="about-intro">Projects are added here only when they are <em>completed</em>.</p>
+                    <div class="section-wrapper">
+                        <h4 class="project-sub">Time to implement my learnings.</h4>
+                        <p class="h1 project-head">Without any Projects, No Programmer is of any avail. Here are my <em>recent</em> projects.</p>
+                        <p class="project-intro">Projects are added here only when they are <em>completed</em>.</p>
+                    </div>
                 </div>
                 <div class="col-lg-6 section-sub align-self-center">
                     <h3 class="section-head">Recent Projects</h3>
@@ -167,6 +176,8 @@
                     <p class="lead intro-text">Check out all of my projects <a href="https://github.com/Zlytherin?tab=repositories">over here</a>!</p>
                 </div>
             </div>
+
+            <img id="arrow" onclick="topFunction();" src="https://img.icons8.com/metro/1600/circled-up.png" alt="">
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
