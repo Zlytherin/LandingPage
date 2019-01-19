@@ -7,6 +7,26 @@ mark {
     background-color: #e2e3e4;
     font-family: 'Roboto Mono', consolas, sans-serif;
 }
+li {
+    font-family: 'Roboto'
+}
+#arrow {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 50px;
+    opacity: 0;
+    transition: 0.5s;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #F5F5F5;
+}
+.main-list {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2)
+}
 #header {
     background-color: #343434;
     color: #F5F5F5;
@@ -15,6 +35,10 @@ mark {
     position: fixed;
     top: 0px;
     z-index: 10;
+}
+#header>div>a {
+    text-decoration: none;
+    color: #F5F5F5;
 }
 .head-text {
     font-family: 'Roboto Mono', monospace;
@@ -70,8 +94,16 @@ mark {
     margin-top: 20px;
     text-align: center;
 }
-.about-one {
+.section-wrapper {
+    background-color: #fff;
     padding: 40px;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+.about-one {
+    padding: 50px;
     background-color: #330033;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='4.8'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='9'/%3E%3Ccircle cx='539' cy='269' r='9'/%3E%3Ccircle cx='603' cy='493' r='9'/%3E%3Ccircle cx='731' cy='737' r='9'/%3E%3Ccircle cx='520' cy='660' r='9'/%3E%3Ccircle cx='309' cy='538' r='9'/%3E%3Ccircle cx='295' cy='764' r='9'/%3E%3Ccircle cx='40' cy='599' r='9'/%3E%3Ccircle cx='102' cy='382' r='9'/%3E%3Ccircle cx='127' cy='80' r='9'/%3E%3Ccircle cx='370' cy='105' r='9'/%3E%3Ccircle cx='578' cy='42' r='9'/%3E%3Ccircle cx='237' cy='261' r='9'/%3E%3Ccircle cx='390' cy='382' r='9'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -82,14 +114,14 @@ mark {
     font-weight: bold;
 }
 .about-head {
-    color: #f5f5f5;
+    color: #330033;
     font-family: 'Merienda', cursive;
     padding-bottom: 20px;
 }
 .about-intro {
     font-family: 'Roboto Mono';
     font-size: 1.5rem;
-    color: #F9F9F9;
+    color: #550055;
 }
 .section-sub {
     padding: 40px;
@@ -109,6 +141,16 @@ mark {
     padding-bottom: 20px;
     padding-bottom: 20px;
 }
+.skill-head {
+    color: #004765;
+    font-family: 'Merienda', cursive;
+    padding-bottom: 20px;
+}
+.skill-intro {
+    color: #1C6380;
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+}
 .social-one {
     padding: 40px;
     background-color: #8e0018;
@@ -120,12 +162,25 @@ mark {
     padding-bottom: 20px;
     font-weight: bold;
 }
+.social-head {
+    color: #8e0018;
+    font-family: 'Merienda', cursive;
+    padding-bottom: 20px;
+}
+.social-intro {
+    color: #AF142E;
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+}
 .s-icon {
     height: 30px;
     width: 30px;
-    transition: 0.2s;
+    transition: 1s;
     margin: 30px;
     margin-top: 50px;
+}
+.s-icon:hover {
+    transform: scale(1.2) rotate3d(1, 1, 1, 360deg);
 }
 #s-fb:hover {
     fill: #3b5998;
@@ -166,6 +221,16 @@ mark {
     color: #51e081;
     padding-bottom: 20px;
     font-weight: bold;
+}
+.project-head {
+    color: #019031;
+    font-family: 'Merienda', cursive;
+    padding-bottom: 20px;
+}
+.project-intro {
+    color: #13A344;
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
 }
 .intro-text {
     margin-top: 30px;
