@@ -5,7 +5,6 @@ const equal = $('#equal');
 const code = $('#code');
 const colon = $('#colon');
 const progList = $('#prog-list');
-const markList = $('#mark-list');
 const libList = $('#lib-list');
 const fireList = $('#fire-list')
  
@@ -63,11 +62,9 @@ setTimeout(() => colon.text(';'), 8000)
 
 const removeFocus = () => {
     progList.slideUp();
-    markList.slideUp();
     libList.slideUp();
     fireList.slideUp();
     $('#prog').removeClass('active');
-    $('#mark').removeClass('active');
     $('#lib').removeClass('active');
     $('#fire').removeClass('active');
 }
@@ -79,13 +76,6 @@ $('#prog').on('click', () => {
     if (!progList.is(':visible')) {
         $('#prog').addClass('active');
         progList.slideDown();
-    }
-});
-$('#mark').on('click', () => {
-    removeFocus();
-    if (!markList.is(':visible')) {
-        $('#mark').addClass('active');
-        markList.slideDown();
     }
 });
 $('#lib').on('click', () => {
