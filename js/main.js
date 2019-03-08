@@ -40,7 +40,7 @@ const hideArrow = () => {
     $('#arrow').css('opacity', '0')
 }
 
-function topFunction()
+
 
 
 
