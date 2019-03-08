@@ -9,7 +9,7 @@ const libList = $('#lib-list');
 const fireList = $('#fire-list')
  
 const margin = `${header.outerHeight() + 10}px`;
-wrapper.css('marginTop', margin);
+setTimeout(() => wrapper.css('marginTop', margin), 1000);
 
 // Smooth Scrolling
 $(document).ready(function(){
