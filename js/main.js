@@ -40,11 +40,11 @@ const hideArrow = () => {
     $('#arrow').css('opacity', '0')
 }
 
-function topFunction() {
-  $('html, body').animate({
-      'scrollTop': 0
-  }, 500, 'swing');
-}
+function topFunction()
+
+
+
+
 
 const showHeroText = (element, content, delay) => {
     if (content === "") 
