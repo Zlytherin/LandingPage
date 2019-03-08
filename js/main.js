@@ -23,29 +23,6 @@ $(document).ready(function(){
     });
 });
 
-window.onscroll = () => scrollFunction();
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    showArrow();
-  } else {
-    hideArrow();
-  }
-}
-
-const showArrow = () => {
-    $('#arrow').css('opacity', '1')
-}
-const hideArrow = () => {
-    $('#arrow').css('opacity', '0')
-}
-
-
-
-
-
-
-
 const showHeroText = (element, content, delay) => {
     if (content === "") 
         return;
