@@ -10,20 +10,20 @@ mark {
 li {
     font-family: 'Roboto'
 }
-#arrow {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 50px;
-    opacity: 0;
-    transition: 0.5s;
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: #F5F5F5;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-list {
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2)
 }
