@@ -32,10 +32,10 @@ const showHeroText = (element, content, delay) => {
     setTimeout(() => showHeroText(element, content, delay), delay);
 }
 
-setTimeout(() => showHeroText(myWorld, "myWorld", 500),1000);
-setTimeout(() => showHeroText(equal, " = ", 500), 5000);
-setTimeout(() => showHeroText(code, "code", 500), 6800);
-setTimeout(() => colon.text(';'), 9000)
+setTimeout(() => showHeroText(myWorld, "myWorld", 500),100);
+setTimeout(() => showHeroText(equal, " = ", 500), 4100);
+setTimeout(() => showHeroText(code, "code", 500), 5900);
+setTimeout(() => colon.text(';'), 8100)
 
 const removeFocus = () => {
     progList.slideUp();
