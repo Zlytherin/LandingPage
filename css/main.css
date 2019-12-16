@@ -64,7 +64,7 @@ li {
 }
 #cursor {
     color: #036592;
-    animation: cursor-blink 1s infinite;
+    animation: cursor-blink 1.5s infinite;
 }
 .line {
     background-color: #7B8788;
@@ -273,16 +273,16 @@ li {
     0% {
         opacity: 0;
     }
-    33% {
+    25% {
         opacity: 1;
     }
-    67% {
+    50% {
         opacity: 0;
     }
-    /*75% {
+    75% {
         opacity: 1;
-    }*/
+    }
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 }
