@@ -177,8 +177,11 @@ li {
 #s-gh:hover {
     fill: #24292E;
 }
-#s-yt:hover, #s-qo:hover {
+#s-yt:hover {
     fill: #FF0000;
+}
+#s-qo:hover {
+    fill: rgb(185,43,39);
 }
 #s-tt:hover {
     fill: #1DA1F2;
