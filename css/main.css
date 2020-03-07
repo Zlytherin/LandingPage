@@ -177,7 +177,7 @@ li {
 #s-gh:hover {
     fill: #24292E;
 }
-#s-yt:hover {
+#s-yt:hover, #s-qo:hover {
     fill: #FF0000;
 }
 #s-tt:hover {
