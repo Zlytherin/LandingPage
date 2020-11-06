@@ -2,7 +2,7 @@
     text-decoration: none;
     color: #F5F5F5;
 }
-body {
+body { 
     height: 100%;
     width: 100%;
     background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.5)), url("bk.png");
