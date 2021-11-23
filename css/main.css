@@ -186,6 +186,12 @@ li {
 #s-tt:hover {
     fill: #1DA1F2;
 }
+#s-dc:hover {
+    fill: #7289d9;
+}
+#s-tg:hover {
+    fill: #0088cc;
+}
 #s-ig {
     height: 40px;
     width: 40px;
